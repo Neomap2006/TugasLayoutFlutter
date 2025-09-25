@@ -36,8 +36,6 @@ class layoutflutter1 extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 25),
-
-              // Row utama
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
