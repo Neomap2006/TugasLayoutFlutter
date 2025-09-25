@@ -22,9 +22,11 @@ class Layout extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(width: 260),
+                  Spacer(),
                   Icon(Icons.chevron_left, size: 22),
+                  SizedBox(width: 8),
                   Icon(Icons.calendar_month, size: 20),
+                  SizedBox(width: 8),
                   Icon(Icons.chevron_right, size: 22),
                 ],
               ),
@@ -39,7 +41,7 @@ class Layout extends StatelessWidget {
                       color: Colors.black,
                     ),
                   ),
-                  SizedBox(width: 230),
+                  Spacer(),
                   Text(
                     "Details",
                     style: TextStyle(
@@ -52,6 +54,7 @@ class Layout extends StatelessWidget {
                   Icon(Icons.arrow_forward_ios, size: 14, color: Colors.blue),
                 ],
               ),
+              const SizedBox(height: 16),
               Container(
                 height: 200,
                 width: 450,
@@ -79,8 +82,9 @@ class Layout extends StatelessWidget {
                       "Next Workout",
                       style: TextStyle(color: Colors.white, fontSize: 13),
                     ),
+                    const SizedBox(height: 4),
                     const Text(
-                      "Lest Toning",
+                      "Leg Toning",
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 20,
@@ -95,23 +99,26 @@ class Layout extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
+                    const Spacer(),
                     Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.only(top: 50),
-                          child: Row(
-                            children: const [
-                              Icon(Icons.timer, color: Colors.white, size: 18),
-                              SizedBox(width: 6),
-                              Text(
-                                "60 min",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 16,
-                                ),
-                              ),
-                            ],
+                        const Icon(Icons.timer, color: Colors.white, size: 18),
+                        const SizedBox(width: 6),
+                        const Text(
+                          "60 min",
+                          style: TextStyle(color: Colors.white, fontSize: 16),
+                        ),
+                        const Spacer(),
+                        Container(
+                          decoration: const BoxDecoration(
+                            color: Colors.white,
+                            shape: BoxShape.circle,
+                          ),
+                          padding: const EdgeInsets.all(6),
+                          child: const Icon(
+                            Icons.play_arrow,
+                            color: Color.fromARGB(255, 177, 12, 189),
+                            size: 20,
                           ),
                         ),
                       ],
