@@ -17,16 +17,16 @@ class Layout extends StatelessWidget {
                   Text(
                     "Training",
                     style: TextStyle(
-                      fontSize: 24,
+                      fontSize: 15,
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   Spacer(),
                   Icon(Icons.chevron_left, size: 22),
-                  SizedBox(width: 8),
+                  SizedBox(width: 1),
                   Icon(Icons.calendar_month, size: 20),
-                  SizedBox(width: 8),
+                  SizedBox(width: 1),
                   Icon(Icons.chevron_right, size: 22),
                 ],
               ),
@@ -36,7 +36,7 @@ class Layout extends StatelessWidget {
                   Text(
                     "Your Program",
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 15,
                       fontWeight: FontWeight.bold,
                       color: Colors.black,
                     ),
@@ -56,7 +56,7 @@ class Layout extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               Container(
-                height: 200,
+                height: 150,
                 width: 450,
                 padding: const EdgeInsets.all(18),
                 decoration: BoxDecoration(
@@ -82,12 +82,12 @@ class Layout extends StatelessWidget {
                       "Next Workout",
                       style: TextStyle(color: Colors.white, fontSize: 13),
                     ),
-                    const SizedBox(height: 4),
+                    const SizedBox(height: 1),
                     const Text(
                       "Leg Toning",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 20,
+                        fontSize: 15,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -95,18 +95,18 @@ class Layout extends StatelessWidget {
                       "and Glutes Workout",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 20,
+                        fontSize: 15,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     const Spacer(),
                     Row(
                       children: [
-                        const Icon(Icons.timer, color: Colors.white, size: 18),
-                        const SizedBox(width: 6),
+                        const Icon(Icons.timer, color: Colors.white, size: 15),
+                        const SizedBox(width: 5),
                         const Text(
                           "60 min",
-                          style: TextStyle(color: Colors.white, fontSize: 16),
+                          style: TextStyle(color: Colors.white, fontSize: 14),
                         ),
                         const Spacer(),
                         Container(
@@ -125,6 +125,70 @@ class Layout extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
+              const SizedBox(height: 30),
+              Stack(
+                children: [
+                  Container(
+                    height: 150,
+                    width: 450,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(18),
+                      image: const DecorationImage(
+                        image: AssetImage("Gambar/card.jpg"),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 150,
+                    width: 450,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(18),
+                    ),
+                  ),
+                  Positioned(
+                    left: 5,
+                    child: Image.asset(
+                      "Gambar/figure1.png",
+                      height: 150,
+                      width: 150,
+                    ),
+                  ),
+                  Positioned(
+                    top: 16,
+                    right: 16,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: const [
+                        Text(
+                          "You are doing great",
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          "keep it up",
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 14,
+                          ),
+                        ),
+                        Text(
+                          "stick to your plan",
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 14,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
