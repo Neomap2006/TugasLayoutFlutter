@@ -63,13 +63,13 @@ class Layout extends StatelessWidget {
                   borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(18),
                     topLeft: Radius.circular(18),
-                    topRight: Radius.circular(120),
+                    topRight: Radius.circular(100),
                     bottomRight: Radius.circular(18),
                   ),
                   gradient: const LinearGradient(
                     colors: [
-                      Color.fromARGB(255, 177, 12, 189),
-                      Color.fromARGB(255, 198, 98, 220),
+                      Color.fromARGB(255, 189, 12, 142),
+                      Color.fromARGB(255, 232, 106, 211),
                     ],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
@@ -128,9 +128,10 @@ class Layout extends StatelessWidget {
               ),
               const SizedBox(height: 30),
               Stack(
+                clipBehavior: Clip.none,
                 children: [
                   Container(
-                    height: 150,
+                    height: 100,
                     width: 450,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(18),
@@ -148,24 +149,25 @@ class Layout extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    left: 5,
+                    top: -27,
+                    left: 0,
                     child: Image.asset(
                       "Gambar/figure1.png",
-                      height: 150,
-                      width: 150,
+                      height: 100,
+                      width: 100,
                     ),
                   ),
                   Positioned(
                     top: 16,
-                    right: 16,
+                    left: 200,
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
                         Text(
                           "You are doing great",
                           style: TextStyle(
                             color: Colors.blue,
-                            fontSize: 20,
+                            fontSize: 15,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
