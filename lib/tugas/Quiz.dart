@@ -24,10 +24,13 @@ class Layout extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(width: 8),
+                  SizedBox(width: 350),
                   Icon(Icons.chevron_left, size: 22),
-                  SizedBox(width: 1),
-                  Icon(Icons.calendar_month, size: 20),
+                  // geser ikon kalender ke kanan sedikit
+                  Padding(
+                    padding: EdgeInsets.only(left: 1),
+                    child: Icon(Icons.calendar_month, size: 20),
+                  ),
                   SizedBox(width: 1),
                   Icon(Icons.chevron_right, size: 22),
                 ],
@@ -43,13 +46,16 @@ class Layout extends StatelessWidget {
                       color: Colors.black,
                     ),
                   ),
-                  SizedBox(width: 8),
-                  Text(
-                    "Details",
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.blue,
+                  // geser tulisan Details biar lebih rapi
+                  Padding(
+                    padding: EdgeInsets.only(left: 320),
+                    child: Text(
+                      "Details",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blue,
+                      ),
                     ),
                   ),
                   SizedBox(width: 4),
