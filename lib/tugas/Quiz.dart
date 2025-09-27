@@ -12,7 +12,6 @@ class Layout extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Header
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: const [
@@ -26,7 +25,6 @@ class Layout extends StatelessWidget {
                   ),
                   SizedBox(width: 350),
                   Icon(Icons.chevron_left, size: 22),
-                  // geser ikon kalender ke kanan sedikit
                   Padding(
                     padding: EdgeInsets.only(left: 1),
                     child: Icon(Icons.calendar_month, size: 20),
@@ -46,7 +44,6 @@ class Layout extends StatelessWidget {
                       color: Colors.black,
                     ),
                   ),
-                  // geser tulisan Details biar lebih rapi
                   Padding(
                     padding: EdgeInsets.only(left: 320),
                     child: Text(
@@ -145,7 +142,6 @@ class Layout extends StatelessWidget {
               Stack(
                 clipBehavior: Clip.none,
                 children: [
-                  // Card Background
                   Container(
                     height: 100,
                     width: 450,
